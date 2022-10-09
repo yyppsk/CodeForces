@@ -9,6 +9,7 @@
     "list": "cpp",
     "queue": "cpp",
     "vector": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "initializer_list": "cpp"
   }
 }
