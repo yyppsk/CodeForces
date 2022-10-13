@@ -16,6 +16,11 @@ int main()
         {
             a.push_back(i);
         }
+        for (auto i : a)
+        {
+            cout << i << " ";
+        }
+        cout << endl;
         int i = 0, j = 1;
         while (i < a.size())
         {
@@ -25,7 +30,7 @@ int main()
         }
         for (auto i : a)
         {
-            printf("%d ", i);
+            cout << i << " ";
         }
     }
     return 0;
