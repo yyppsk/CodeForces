@@ -20,7 +20,19 @@ int main()
     }
     for (auto i : qu)
     {
-        cout << i.first << ":" << i.second << endl;
+        for (auto i : qu)
+        {
+            // cout << i.first << ":" << i.second << endl;
+        }
+        // cout << endl;
+        if (i.second - candies <= 0)
+            qu.pop_front();
+        else
+        {
+            qu.push_back({i.first, i.second - candies});
+            qu.pop_front();
+        }
     }
+    cout << qu.back().first << endl;
     return 0;
 }

@@ -25,7 +25,7 @@ int main()
         }
         for (auto i : a)
         {
-            cout << i << " ";
+            printf("%d ", i);
         }
     }
     return 0;
