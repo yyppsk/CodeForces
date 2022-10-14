@@ -18,19 +18,29 @@ int main()
         p.second = temp;
         qu.push_back(p);
     }
+    /*
     for (auto i : qu)
+    {
+        cout << i.first << ":" << i.second << endl;
+    }
+    cout << endl;
+    */
+    while (!qu.empty())
     {
         for (auto i : qu)
         {
-            // cout << i.first << ":" << i.second << endl;
-        }
-        // cout << endl;
-        if (i.second - candies <= 0)
-            qu.pop_front();
-        else
-        {
-            qu.push_back({i.first, i.second - candies});
-            qu.pop_front();
+            if (i.second - candies <= 0)
+                qu.pop_front();
+            else
+            {
+                qu.push_back({i.first, i.second - candies});
+                qu.pop_front();
+            }
+            for (auto i : qu)
+            {
+                // cout << i.first << ":" << i.second << endl;
+            }
+            //cout << endl;
         }
     }
     cout << qu.back().first << endl;
