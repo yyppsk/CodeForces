@@ -8,6 +8,7 @@ int main()
     long long int range, k;
     cin >> range >> k;
     // Even Case & Odd case
+    //USED Nth number in an Arithmetic progression
     if (range % 2 == 0)
     {
         if (k <= (range / 2))
